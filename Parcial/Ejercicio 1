@@ -7,12 +7,12 @@ descuento=total_compra<50==0
 #Calcular monto final a pagar
 monto_final=total_compra-descuento
 #Caja negra
-if(total_compra<50==0):
-    print('No aplica descuento')
-elif(total_compra>=50 and 100):
-    print('Aplica descuento del 5%')
-elif(total_compra>100==0.10):
-    print('Aplica descuento del 10%')
+if(total_compra<50):
+    print('Descuento 0')
+elif(total_compra<=50 and total_compra<=100):
+    print('Descuento 0.5')
+elif(total_compra>100):
+    print('Descuento 0.10')
 #Mostrar resultados
 print(f'Descuento aplicado: {descuento:.2f} COP')
 print(f'Monto final a pagar: {total_compra:.2f} COP')
