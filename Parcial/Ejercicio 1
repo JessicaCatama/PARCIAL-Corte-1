@@ -1,1 +1,18 @@
-
+#Entrada
+total_compra=float(input('Ingresa valor de la compra: '))
+#Calcular el descuento si aplica (compre > $100-10%)
+descuento=total_compra>100*0.10
+descuento=total_compra<100*0.5
+descuento=total_compra<50==0
+#Calcular monto final a pagar
+monto_final=total_compra-descuento
+#Caja negra
+if(total_compra<50==0):
+    print('No aplica descuento')
+elif(total_compra>=50 and 100):
+    print('Aplica descuento del 5%')
+elif(total_compra>100==0.10):
+    print('Aplica descuento del 10%')
+#Mostrar resultados
+print(f'Descuento aplicado: {descuento:.2f} COP')
+print(f'Monto final a pagar: {total_compra:.2f} COP')
